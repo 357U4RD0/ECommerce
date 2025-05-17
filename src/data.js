@@ -75,7 +75,7 @@ export const data = [
         id: 10,
         name: 'Cuphead',
         price: 19.99,
-        urlImage: 'https://meridiem-games.com/backoffice/public/uploads/games/EaRycC.jpg',
+        img: 'https://meridiem-games.com/backoffice/public/uploads/games/EaRycC.jpg',
         quantity: 1,
         description: 'Un desafiante juego de acción y plataformas con un estilo visual único inspirado en los dibujos animados de los años 30. Enfrenta jefes extravagantes con precisión milimétrica mientras luchas por saldar una peligrosa deuda con el diablo.',
     },
