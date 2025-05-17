@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import { data } from "../data";
+import ProductCard from "./ProductCard";
 
-export const products = () => {
-    return (
-        <div>Products</div>
-    )
-}
+const Products = () => {
+  return (
+    <div className="products-container">
+      {data.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
+};
+
+export default Products;
