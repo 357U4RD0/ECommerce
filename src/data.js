@@ -79,4 +79,20 @@ export const data = [
         quantity: 1,
         description: 'Un desafiante juego de acción y plataformas con un estilo visual único inspirado en los dibujos animados de los años 30. Enfrenta jefes extravagantes con precisión milimétrica mientras luchas por saldar una peligrosa deuda con el diablo.',
     },
+    {
+        id: 11,
+        name: 'Grand Theft Auto V',
+        price: 39.99,
+        img: 'https://phantom-marca-mx.unidadeditorial.es/b6728e2232f92786a7f6d50c50a7e36d/resize/828/f/jpg/mx/assets/multimedia/imagenes/2024/02/05/17070878111134.jpg',
+        quantity: 1,
+        description: 'Grand Theft Auto V es un juego de acción y aventura en mundo abierto. Sigues la historia de tres personajes (Michael, Franklin y Trevor) mientras realizan atracos y sobreviven en la caótica ciudad de Los Santos. Puedes explorar libremente, conducir, disparar, y participar en una gran variedad de actividades. También incluye GTA Online, un modo multijugador lleno de eventos y misiones.',
+    },
+    {
+        id: 12,
+        name: 'Donkey Kong Country',
+        price: 29.99,
+        img: 'https://assets-prd.ignimgs.com/2025/02/15/dkcsnes-1739578170756.jpg',
+        quantity: 1,
+        description: 'Donkey Kong Country es un juego de plataformas clásico en 2D. Acompañas a Donkey Kong y Diddy Kong en su misión para recuperar sus bananas robadas por King K. Rool. El juego es conocido por su estilo gráfico innovador y su jugabilidad fluida, con niveles variados llenos de enemigos, secretos y desafíos.',
+    },
 ]
