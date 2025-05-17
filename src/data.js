@@ -59,7 +59,7 @@ export const data = [
         id: 8,
         name: 'Terraria',
         price: 9.99,
-        img: 'https://static.wikia.nocookie.net/terrariaguia/images/6/6f/Terraria.jpg/revision/latest?cb=20211105144421&path-prefix=es',
+        img: 'https://m.media-amazon.com/images/M/MV5BZWJkZWNkZDgtOTMzMS00NjlhLTk5MTEtZWFiMTQ0MzE4MzAyXkEyXkFqcGc@._V1_.jpg',
         quantity: 1,
         description: 'Explora, construye y lucha en un mundo en 2D generado aleatoriamente. Desde cavernas llenas de tesoros hasta jefes colosales, Terraria combina exploración, crafting y combate en una experiencia infinita, tanto en solitario como en multijugador.',
     },
