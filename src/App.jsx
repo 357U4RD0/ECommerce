@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import React from "react";
+import Products from "./components/Products";
 
-function App() {
-
-  return (
-    <h1> Hola mundo </h1>
+const App = () => {
+  return(
+    <div>
+      <h1 style ={{textAlign: "center"}}>Productos en Venta</h1>
+      <Products />
+    </div>
   )
 }
 
