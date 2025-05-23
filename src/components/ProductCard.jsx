@@ -1,26 +1,28 @@
-import React, {useState} from 'react'
+import React, { useContext } from 'react';
 //import { useNavigate } from 'react-router-dom';
+import CarritoContext from '../contexto/CarritoCont';
+
 const ProductCard = ({ product }) => {
-    const [count, setCount] = useState(0);
-    //const navigate = useNavigate();
+  //const navigate = useNavigate();
+  const { addToCart } = useContext(CarritoContext);
 
-    const DirImagen = () => {
-     // navigate()
-    }
+  const irADetalles = () => {
+    navigate(`/detalles/${product.id}`);
+  };
 
-    const ClickPrueba = () => {
-        setCount(cuenta => cuenta + 1);
-        console.log(`${product.name} ${count + 1}`);
-    }
-  
-    return (
+  const agregarProducto = () => {
+    addToCart(product);
+    console.log(`${product.name} añadido al carrito`);
+  };
+
+  return (
     <div className="card">
-      <img onDoubleClick={DirImagen} src={product.img} alt={product.name} className="card-img" />
+      <img>onDoubleClick={irADetalles} src={product.img} alt={product.name} className="card-img"</img>
       <h3>{product.name}</h3>
       <p>${product.price.toFixed(2)}</p>
-      <button onClick = {ClickPrueba}>Añadir</button>
-      </div>
+      <button onClick={agregarProducto}>Añadir</button>
+    </div>
   );
-}
+};
 
 export default ProductCard;
