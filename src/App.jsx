@@ -1,13 +1,18 @@
-import React from "react";
-import Products from "./components/Products";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Listado from './pages/Listado';
+import Detalles from './pages/Detalles';
+import Carrito from './pages/Carrito';
 
-const App = () => {
-  return(
-    <div>
-      <h1 style ={{textAlign: "center"}}>Productos en Venta</h1>
-      <Products />
-    </div>
-  )
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Listado />} />
+        <Route path="/detalles/:id" element={<Detalles />} />
+        <Route path="/carrito" element={<Carrito />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
