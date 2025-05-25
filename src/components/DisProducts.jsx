@@ -2,7 +2,7 @@ import juegosConDescuento from '../data2';
 import DiscountCard from './DiscountCard';
 
 const DisProducts = () => (
-  <div className="cards-container">
+  <div className="products-container">
     {juegosConDescuento.map(p => (
       <DiscountCard key={p.id} product={p} />
     ))}

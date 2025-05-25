@@ -88,6 +88,7 @@ button:focus-visible {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
+  position: relative;
 }
 
 .card-img {
@@ -179,17 +180,16 @@ button:focus-visible {
       font-family: 'TítuloSecundario';
       font-size: 40px;
     }
-    
+
 .discount-label {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: crimson;
+  top: 12px;
+  right: 12px;
+  background-color: red;
   color: white;
-  font-size: 12px;
-  font-weight: bold;
   padding: 4px 6px;
-  border-radius: 4px;
+  font-size: 0.8rem;
+  border-radius: 5px;
 }
 
 .price-original {
@@ -199,7 +199,21 @@ button:focus-visible {
 }
 
 .price-discount {
-  color: #2d8f3c;
+  color: white;
   font-size: 16px;
   font-weight: bold;
+}
+
+.contador {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff4c4c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 1000;
 }
