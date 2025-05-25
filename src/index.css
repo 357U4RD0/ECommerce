@@ -215,5 +215,13 @@ button:focus-visible {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
   z-index: 1000;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.contador:hover {
+  background-color: #ff1a1a;
 }

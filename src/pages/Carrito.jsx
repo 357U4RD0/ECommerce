@@ -2,8 +2,8 @@ import React from 'react';
 
 const Carrito = () => {
   return (
-    <div>
-      <h2>Carrito de Compras</h2>
+    <div style={{ padding: '20px', textAlign: 'center', fontSize: '24px' }}>
+      Hola mundo
     </div>
   );
 };
