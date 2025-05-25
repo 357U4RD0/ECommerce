@@ -1,5 +1,6 @@
 import React from 'react';
 import Products from '../components/Products';
+import DisProducts from '../components/DisProducts';
 
 const Listado = () => {
   return (
@@ -8,6 +9,7 @@ const Listado = () => {
       <h2 style={{textAlign: 'center', color: "white"}}>LISTADO DE PRODUCTOS</h2>
       <Products />
       <h2 style={{textAlign: 'center', color: "white"}}>JUEGOS EN DESCUENTO</h2>
+      <DisProducts />
     </div>
   );
 };

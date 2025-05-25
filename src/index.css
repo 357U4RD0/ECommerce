@@ -179,3 +179,27 @@ button:focus-visible {
       font-family: 'TítuloSecundario';
       font-size: 40px;
     }
+    
+.discount-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: crimson;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.price-discount {
+  color: #2d8f3c;
+  font-size: 16px;
+  font-weight: bold;
+}
