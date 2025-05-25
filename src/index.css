@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: #d9d9d9;
+  background-color: black; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,7 +29,10 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #d9d9d9;
+  background: linear-gradient(to bottom, rgba(116, 6, 6, 0.773) 0%, rgb(116, 6, 6, 0.73) 5%,  black 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -84,7 +87,7 @@ button:focus-visible {
   padding: 12px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: black;
+  color: white;
 }
 
 .card-img {
@@ -157,3 +160,22 @@ button:focus-visible {
 .volver-btn:hover {
   background-color: #2f3542;
 }
+
+@font-face {
+      font-family: 'TítuloPrincipal';
+      src: url('fonts/DangerZoneWarning.ttf') format('truetype');
+    }
+
+    h1 {
+      font-family: 'TítuloPrincipal';
+    }
+
+@font-face {
+      font-family: 'TítuloSecundario';
+      src: url('fonts/AristonComic.ttf') format('truetype');
+    }
+
+    h2 {
+      font-family: 'TítuloSecundario';
+      font-size: 40px;
+    }
