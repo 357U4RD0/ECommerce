@@ -91,3 +91,65 @@ button:focus-visible {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.detalles-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  border: 5px solid black;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.detalles-header {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.detalles-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.detalles-img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.detalles-info {
+  flex: 1;
+}
+
+.detalles-nombre {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.detalles-descripcion {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.volver-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: #444c5c;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.volver-btn:hover {
+  background-color: #2f3542;
+}
