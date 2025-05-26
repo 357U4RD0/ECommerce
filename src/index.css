@@ -51,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -104,7 +106,7 @@ button:focus-visible {
   margin: 20px auto;
   padding: 20px;
   background-color: white;
-  border: 5px solid black;
+  border: 2px solid black;
   background: #f0f0f0;
   box-sizing: border-box;
 }
@@ -142,7 +144,7 @@ button:focus-visible {
 }
 
 .detalles-descripcion {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #333;
 }
 
@@ -206,7 +208,7 @@ button:focus-visible {
 
 .contador {
   position: fixed;
-  right: 20px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ff4c4c;
@@ -214,7 +216,7 @@ button:focus-visible {
   font-size: 20px;
   font-weight: bold;
   padding: 10px 15px;
-  border-radius: 50%;
+  border-radius: 10px 0 0 10px;
   border: none;
   cursor: pointer;
   z-index: 1000;
@@ -224,4 +226,131 @@ button:focus-visible {
 
 .contador:hover {
   background-color: #ff1a1a;
+}
+
+.carrito-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  border: 4px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carrito-header {
+  background: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 25px 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.carrito-header div:first-child {
+  text-align: left;
+}
+
+.carrito-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 40px 30px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  min-height: 150px;
+}
+
+.producto-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.producto-imagen {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carrito-item div:not(.producto-info),
+.carrito-item select {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.carrito-item select {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  min-width: 80px;
+}
+
+.carrito-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #f8f9fa;
+  font-size: 28px;
+  font-weight: bold;
+  min-height: 80px;
+}
+
+.carrito-actions {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.carrito-actions button {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  min-height: 60px;
+}
+
+.btn-vaciar {
+  background: #e53e3e;
+  color: white;
+}
+
+.btn-volver {
+  background: #4a5568;
+  color: white;
+}
+
+.btn-pagar {
+  background: #48bb78;
+  color: white;
+}
+
+.carrito-actions button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .carrito-header, .carrito-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .carrito-actions {
+    flex-direction: column;
+  }
 }

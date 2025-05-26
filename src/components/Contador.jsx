@@ -1,4 +1,3 @@
-// src/components/Contador.jsx
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CarritoContext from '../contexto/CarritoCont';
@@ -12,12 +11,7 @@ const Contador = () => {
   };
 
   return (
-    <button 
-      className="contador" 
-      onClick={irAlCarrito} 
-      aria-label="Ir al carrito"
-      title="Ir al carrito"
-    >
+    <button className="contador" onClick={irAlCarrito} aria-label="Ir al carrito" title="Ir al carrito">
       {contador}
     </button>
   );

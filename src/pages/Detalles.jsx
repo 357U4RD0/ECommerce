@@ -21,7 +21,7 @@ const Detalles = () => {
           <p className="detalles-descripcion">{producto.description}</p>
         </div>
       </div>
-
+      
       <button className="volver-btn" onClick={() => navigate('/')}> Volver </button>
     </div>
   );
