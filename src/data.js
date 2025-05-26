@@ -101,7 +101,7 @@ export const data = [
         price: 79.99,
         img: '/assets/GTAVI.jpg',
         quantity: 1,
-        description: 'Donkey Kong Country es un juego de plataformas clásico en 2D. Acompañas a Donkey Kong y Diddy Kong en su misión para recuperar sus bananas robadas por King K. Rool. El juego es conocido por su estilo gráfico innovador y su jugabilidad fluida, con niveles variados llenos de enemigos, secretos y desafíos.',
+        description: 'GTA VI sigue a Lucia y Jason, una pareja criminal en Vice City, dentro del estado ficticio de Leonida. Tras un golpe fallido, se ven atrapados en una conspiración que los obliga a sobrevivir en un mundo abierto dinámico, lleno de acción, traiciones y oportunidades para ascender en el crimen.',
     },
     {
         id: 14,
@@ -109,6 +109,6 @@ export const data = [
         price: 49.99,
         img: '/assets/Cyberpunk.jpg',
         quantity: 1,
-        description: 'Donkey Kong Country es un juego de plataformas clásico en 2D. Acompañas a Donkey Kong y Diddy Kong en su misión para recuperar sus bananas robadas por King K. Rool. El juego es conocido por su estilo gráfico innovador y su jugabilidad fluida, con niveles variados llenos de enemigos, secretos y desafíos.',
+        description: 'Cyberpunk 2077 sigue a V, un mercenario en Night City, una ciudad futurista dominada por megacorporaciones. Tras un atraco fallido, V adquiere un biochip que contiene la conciencia de Johnny Silverhand, una estrella de rock y terrorista. A medida que el chip amenaza con sobrescribir la mente de V, ambos deben trabajar juntos para encontrar una solución y sobrevivir en un mundo lleno de traiciones, tecnología avanzada y luchas de poder.',
     },
 ]
