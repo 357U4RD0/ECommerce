@@ -1,11 +1,12 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { data } from '../data';
+import data2 from '../data2'
 
 const Detalles = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const producto = data.find(item => item.id === parseInt(id));
+  const producto = data.find(item => item.id === parseInt(id)) || data2.find(item => item.id === parseInt(id));
 
   return (
     <div className="detalles-container">
