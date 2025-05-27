@@ -301,7 +301,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   background: #f8f9fa;
   font-size: 28px;
   font-weight: bold;
@@ -311,27 +311,22 @@ button:focus-visible {
 .carrito-actions {
   display: flex;
   gap: 20px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .carrito-actions button {
   flex: 1;
-  padding: 16px 24px;
+  padding: 20px 24px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
-  min-height: 60px;
+  min-height: 10px;
 }
 
 .btn-vaciar {
   background: #e53e3e;
-  color: white;
-}
-
-.btn-volver {
-  background: #4a5568;
   color: white;
 }
 
