@@ -1,12 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CarritoContext from '../contexto/CarritoCont';
 
 const Carrito = () => {
   const navigate = useNavigate();
   const { carrito } = useContext(CarritoContext);
+  const [cantidades, setCantidades] = useState(
+    carrito.reduce((acc, p) => ({ ...acc, [p.id]: 1 }), {})
+  );
 
-  const total = carrito.reduce((acc, p) => acc + p.price * (p.quantity || 1), 0);
+  const cambiarCant = (id, nuevaCantidad) => {
+    setCantidades(prev => ({ ...prev, [id]: nuevaCantidad }));
+  };
+
+  const total = useMemo(() => {
+    return carrito.reduce(
+      (acc, p) => acc + p.price * (cantidades[p.id] || 1),
+      0
+    );
+  }, [carrito, cantidades]);
 
   return (
     <div className="carrito-container">
@@ -14,19 +26,22 @@ const Carrito = () => {
         <div>PRODUCTO</div><div>PRECIO</div><div>CANTIDAD</div><div>SUBTOTAL</div>
       </div>
 
-      {carrito.map(producto => (
-        <div className="carrito-item" key={producto.id}>
+      {carrito.map(p => (
+        <div className="carrito-item" key={p.id}>
           <div className="producto-info">
-            <img src={producto.img} alt={producto.name} className="producto-imagen" />
-            <span>{producto.name}</span>
+            <img src={p.img} alt={p.name} className="producto-imagen" />
+            <span>{p.name}</span>
           </div>
-          <div>${producto.price.toFixed(2)}</div>
-          <select defaultValue={producto.quantity || 1}>
+          <div>${p.price.toFixed(2)}</div>
+          <select
+            value={cantidades[p.id]}
+            onChange={e => cambiarCant(p.id, parseInt(e.target.value))}
+          >
             {[...Array(9)].map((_, i) => (
               <option key={i + 1} value={i + 1}>{i + 1}</option>
             ))}
           </select>
-          <div>${(producto.price * (producto.quantity || 1)).toFixed(2)}</div>
+          <div>${(p.price * (cantidades[p.id] || 1)).toFixed(2)}</div>
         </div>
       ))}
 
@@ -37,7 +52,7 @@ const Carrito = () => {
 
       <div className="carrito-actions">
         <button className="btn-vaciar">🗑️ Vaciar</button>
-        <button className="volver-btn" onClick={() => navigate('/')}>↶ Volver</button>
+        <button className="btn-volver" onClick={() => navigate('/')}>↶ Volver</button>
         <button className="btn-pagar">$ Pagar</button>
       </div>
     </div>

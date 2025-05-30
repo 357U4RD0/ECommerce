@@ -274,8 +274,8 @@ button:focus-visible {
 }
 
 .producto-imagen {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }

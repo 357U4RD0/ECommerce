@@ -4,6 +4,7 @@ export const data = [
         name: 'Xenoblade Chronicles X',
         price: 54.59,
         img: '/assets/Xenoblade.jpg',
+        quantity: 1,
         description: 'Embárcate en una épica odisea de ciencia ficción en un vasto mundo abierto en el planeta Mira. Como miembro de BLADE, explora entornos alienígenas, pilota mecas gigantes llamados Skells y enfrenta criaturas colosales mientras intentas asegurar el futuro de la humanidad tras la destrucción de la Tierra.',
     },
     {
@@ -11,6 +12,7 @@ export const data = [
         name: 'The Last of Us 2',
         price: 43.59,
         img: '/assets/TLOU2.png',
+        quantity: 1,
         description: 'Una historia intensa y emocional sobre venganza, redención y los límites de la humanidad. Ambientado en un mundo postapocalíptico devastado por una pandemia, sigue a Ellie en una travesía brutal donde cada decisión tiene un peso moral y cada encuentro deja cicatrices.',
     },
     {
@@ -18,6 +20,7 @@ export const data = [
         name: 'Super Smash Bros Ultimate',
         price: 59.99,
         img: '/assets/Smash.jpg',
+        quantity: 1,
         description: 'El crossover definitivo del mundo de los videojuegos. Más de 70 personajes icónicos de diferentes franquicias compiten en combates frenéticos, llenos de acción, objetos locos y escenarios memorables. ¡Todo el mundo está aquí!',
     },
     {
@@ -25,6 +28,7 @@ export const data = [
         name: 'Blasphemous 2',
         price: 14.99,
         img: '/assets/Blasphemous2.jpg',
+        quantity: 1,
         description: 'Sumérgete en un metroidvania oscuro de estética barroca y religiosa. Encarnas al Penitente en una España ficticia plagada de fanatismo, castigo divino y criaturas grotescas. Con combates desafiantes y un arte bellamente macabro, esta secuela amplía su mitología con nuevos poderes y armas.',
     },
     {
@@ -32,6 +36,7 @@ export const data = [
         name: 'Doom Eternal',
         price: 39.99,
         img: '/assets/DoomEternal.jpg',
+        quantity: 1,
         description: 'Sé el DOOM Slayer y desata una carnicería infernal sin frenos. Enfréntate a hordas demoníacas con un arsenal brutal en combates frenéticos, veloces y estratégicos. La Tierra está siendo invadida, y solo tú puedes detener el Apocalipsis.',
     },
     {
@@ -39,6 +44,7 @@ export const data = [
         name: 'Mario Kart 8 Deluxe',
         price: 59.99,
         img: '/assets/MarioKart.jpg',
+        quantity: 1,
         description: 'La carrera definitiva de Mario y compañía. Compite en circuitos vibrantes llenos de atajos, objetos caóticos y modos para todos los niveles de habilidad. Ya sea en línea, local o en solitario, la diversión está garantizada a toda velocidad.',
     },
     {
@@ -46,6 +52,7 @@ export const data = [
         name: 'Undertale',
         price: 9.99,
         img: '/assets/Undertale.webp',
+        quantity: 1,
         description: 'Un RPG diferente donde puedes optar por la paz o la violencia. Encuentra monstruos únicos, decisiones con peso moral y humor ingenioso en un mundo pixelado y entrañable. Cada acción cambia radicalmente el rumbo de tu aventura.',
     },
     {
@@ -53,6 +60,7 @@ export const data = [
         name: 'Terraria',
         price: 9.99,
         img: '/assets/Terraria.jpg',
+        quantity: 1,
         description: 'Explora, construye y lucha en un mundo en 2D generado aleatoriamente. Desde cavernas llenas de tesoros hasta jefes colosales, Terraria combina exploración, crafting y combate en una experiencia infinita, tanto en solitario como en multijugador.',
     },
     {
@@ -60,6 +68,7 @@ export const data = [
         name: 'Pokemon X',
         price: 41.49,
         img: '/assets/PokemonX.jpg',
+        quantity: 1,
         description: 'Descubre la región de Kalos y su belleza inspirada en Francia. Captura nuevos Pokémon, personaliza a tu entrenador y vive una aventura 3D renovada con batallas dinámicas, megaevoluciones y un enfoque más social e inmersivo.',
     },
     {
@@ -67,6 +76,7 @@ export const data = [
         name: 'Cuphead',
         price: 19.99,
         img: '/assets/Cuphead.png',
+        quantity: 1,
         description: 'Un desafiante juego de acción y plataformas con un estilo visual único inspirado en los dibujos animados de los años 30. Enfrenta jefes extravagantes con precisión milimétrica mientras luchas por saldar una peligrosa deuda con el diablo.',
     },
     {
@@ -74,6 +84,7 @@ export const data = [
         name: 'Grand Theft Auto V',
         price: 39.99,
         img: '/assets/GTAV.jpg',
+        quantity: 1,
         description: 'Grand Theft Auto V es un juego de acción y aventura en mundo abierto. Sigues la historia de tres personajes (Michael, Franklin y Trevor) mientras realizan atracos y sobreviven en la caótica ciudad de Los Santos. Puedes explorar libremente, conducir, disparar, y participar en una gran variedad de actividades. También incluye GTA Online, un modo multijugador lleno de eventos y misiones.',
     },
     {
@@ -81,6 +92,7 @@ export const data = [
         name: 'Donkey Kong Country',
         price: 29.99,
         img: '/assets/DK.jpg',
+        quantity: 1,
         description: 'Donkey Kong Country es un juego de plataformas clásico en 2D. Acompañas a Donkey Kong y Diddy Kong en su misión para recuperar sus bananas robadas por King K. Rool. El juego es conocido por su estilo gráfico innovador y su jugabilidad fluida, con niveles variados llenos de enemigos, secretos y desafíos.',
     },
     {
@@ -88,6 +100,7 @@ export const data = [
         name: 'Grand Theft Auto VI',
         price: 79.99,
         img: '/assets/GTAVI.jpg',
+        quantity: 1,
         description: 'GTA VI sigue a Lucia y Jason, una pareja criminal en Vice City, dentro del estado ficticio de Leonida. Tras un golpe fallido, se ven atrapados en una conspiración que los obliga a sobrevivir en un mundo abierto dinámico, lleno de acción, traiciones y oportunidades para ascender en el crimen.',
     },
     {
@@ -95,6 +108,7 @@ export const data = [
         name: 'Cyberpunk 2077',
         price: 49.99,
         img: '/assets/Cyberpunk.jpg',
+        quantity: 1,
         description: 'Cyberpunk 2077 sigue a V, un mercenario en Night City, una ciudad futurista dominada por megacorporaciones. Tras un atraco fallido, V adquiere un biochip que contiene la conciencia de Johnny Silverhand, una estrella de rock y terrorista. A medida que el chip amenaza con sobrescribir la mente de V, ambos deben trabajar juntos para encontrar una solución y sobrevivir en un mundo lleno de traiciones, tecnología avanzada y luchas de poder.',
     },
 ]
