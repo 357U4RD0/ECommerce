@@ -9,7 +9,7 @@ const Carrito = () => {
     carrito.reduce((acc, p) => ({ ...acc, [p.id]: 1 }), {})
   );
 
-  const cambiarCant = (id, nuevaCantidad) => {
+  const handleCantidadChange = (id, nuevaCantidad) => {
     setCantidades(prev => ({ ...prev, [id]: nuevaCantidad }));
   };
 
@@ -19,6 +19,8 @@ const Carrito = () => {
       0
     );
   }, [carrito, cantidades]);
+
+  const mostrarTotal = total > 999.99 ? 'ERROR' : `$${total.toFixed(2)}`;
 
   return (
     <div className="carrito-container">
@@ -35,7 +37,7 @@ const Carrito = () => {
           <div>${p.price.toFixed(2)}</div>
           <select
             value={cantidades[p.id]}
-            onChange={e => cambiarCant(p.id, parseInt(e.target.value))}
+            onChange={e => handleCantidadChange(p.id, parseInt(e.target.value))}
           >
             {[...Array(9)].map((_, i) => (
               <option key={i + 1} value={i + 1}>{i + 1}</option>
@@ -47,7 +49,7 @@ const Carrito = () => {
 
       <div className="carrito-total">
         <span>TOTAL</span>
-        <span>${total.toFixed(2)}</span>
+        <span>{mostrarTotal}</span>
       </div>
 
       <div className="carrito-actions">
