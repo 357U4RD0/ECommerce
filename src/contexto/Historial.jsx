@@ -5,14 +5,14 @@ const Historial = createContext();
 export const HistorialProvider = ({ children }) => {
   const historialRef = useRef([]);
 
-  const registrar = (producto) => {
+  const agHistorial = (producto) => {
     if (!historialRef.current.find(p => p.id === producto.id)) {
       historialRef.current.push(producto);
     }
   };
 
   return (
-    <Historial.Provider value={{ registrar, historial: historialRef.current }}>
+    <Historial.Provider value={{ agHistorial, historial: historialRef.current }}>
       {children}
     </Historial.Provider>
   );
