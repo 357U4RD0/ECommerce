@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { data } from '../data';
 import data2 from '../data2';
-import HistorialContext from '../contexto/HistorialCont';
+import HistorialContext from '../contexto/Historial';
 
 const Detalles = () => {
   const { id } = useParams();
