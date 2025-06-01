@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { data } from '../data';
 import data2 from '../data2';
 import HistorialContext from '../contexto/Historial';
+import Estrellas from '../components/Estrellas';
 
 const Detalles = () => {
   const { id } = useParams();
@@ -27,6 +28,7 @@ const Detalles = () => {
         <img src={producto.img} alt={producto.name} className="detalles-img" />
         <div className="detalles-info">
           <h3 className="detalles-nombre">{producto.name}</h3>
+          <Estrellas id={producto.id} editable />
           <p className="detalles-descripcion">{producto.description}</p>
         </div>
       </div>
