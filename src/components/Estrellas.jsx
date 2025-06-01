@@ -3,7 +3,7 @@ import EstrellasContext from '../contexto/EstrellasCont';
 
 const Estrellas = ({ id, editable = false }) => {
   const { estrellas, Puntuacion } = useContext(EstrellasContext);
-  const valor = estrellas[id] || 0;
+  const valor = estrellas[id] ?? 0;
 
   const manejarClick = (e, index) => {
     if (!editable) return;

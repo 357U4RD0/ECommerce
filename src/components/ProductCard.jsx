@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CarritoContext from '../contexto/CarritoCont';
-import Estrellas from './Estrellas';
+import EstrellasContext from '../contexto/EstrellasCont';
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const { addToCart } = useContext(CarritoContext);
+  const { estrellas } = useContext(EstrellasContext);
+  const puntuacion = estrellas[product.id] || 5;
 
   const irADetalles = () => {
     navigate(`/detalles/${product.id}`);
@@ -21,7 +23,7 @@ const ProductCard = ({ product }) => {
       <img onDoubleClick={irADetalles} src={product.img} alt={product.name} className="card-img" />
       <h3>{product.name}</h3>
       <p>${product.price.toFixed(2)}</p>
-      <Estrellas id={product.id} />
+      <p>⭐ {puntuacion} </p>
       <button onClick={agregarProducto}>Añadir</button>
     </div>
   );
