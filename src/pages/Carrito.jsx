@@ -17,8 +17,15 @@ const Carrito = () => {
   return (
     <div className="carrito-container">
       <div className="carrito-header">
-        <div>PRODUCTO</div><div>PRECIO</div><div>CANTIDAD</div><div>SUBTOTAL</div>
+        <div className="encabezado-normal">
+          <div>PRODUCTO</div>
+          <div>PRECIO</div>
+          <div>CANTIDAD</div>
+          <div>SUBTOTAL</div>
+        </div>
+        <div className="encabezado-movil">Carrito</div>
       </div>
+
       <div className="carrito-scroll">
         {carrito.map(p => (
           <CarritoItem key={p.id} producto={p} cantidad={cantidades[p.id]} cambiar={cambiar} />
@@ -28,7 +35,7 @@ const Carrito = () => {
         <div className="carrito-total"><span>TOTAL</span><span>{mostrar}</span></div>
         <div className="carrito-actions">
           <button className="btn-vaciar" onClick={vaciar}>🗑️ Vaciar</button>
-          <button className="btn-volver" onClick={() => navigate('/')}>↶ Volver</button>
+          <button className="volver-btn" onClick={() => navigate('/')}>↶ Volver</button>
           <button className="btn-pagar">$ Pagar</button>
         </div>
       </div>

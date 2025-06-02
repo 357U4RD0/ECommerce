@@ -12,7 +12,7 @@ const Contador = () => {
 
   return (
     <button className="contador" onClick={irAlCarrito} aria-label="Ir al carrito" title="Ir al carrito">
-      {contador}
+      🛒 {contador}
     </button>
   );
 };
