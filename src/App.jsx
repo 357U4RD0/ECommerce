@@ -3,7 +3,7 @@ import Listado from './pages/Listado';
 import Detalles from './pages/Detalles';
 import Carrito from './pages/Carrito';
 import Favoritos from './pages/Favoritos';
-import Historial from './contexto/Historial';
+import Historial from './pages/Historial';
 import { EstrellasProvider } from './contexto/EstrellasCont';
 import { FavoritosProvider } from './contexto/FavoritosCont';
 

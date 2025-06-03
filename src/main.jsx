@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { CarritoProvider } from './contexto/CarritoCont';
-import { HistorialProvider } from './contexto/Historial.jsx';
+import { HistorialProvider } from './contexto/HistorialCont.jsx';
 import { EstrellasProvider } from './contexto/EstrellasCont';
 import { FavoritosProvider } from './contexto/FavoritosCont';
 
