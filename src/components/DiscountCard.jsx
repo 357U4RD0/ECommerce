@@ -21,7 +21,7 @@ const DiscountCard = ({ product }) => {
 
   return (
     <div className="card" style={{ position: 'relative' }}>
-      <Corazon />
+      < Corazon product={product} />
       <span className="discount-label">-{product.descuento}%</span>
       <img onDoubleClick={irADetalles} src={product.img} alt={product.name} className="card-img" />
       <h3>{product.name}</h3>

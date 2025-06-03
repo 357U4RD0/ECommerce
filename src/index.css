@@ -473,3 +473,25 @@ button:focus-visible {
     font-size: 16px;
   }
 }
+
+.boton-favoritos {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-favoritos:hover {
+  background-color: #666;
+}

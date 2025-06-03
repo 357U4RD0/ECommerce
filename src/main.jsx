@@ -5,13 +5,16 @@ import App from './App.jsx';
 import { CarritoProvider } from './contexto/CarritoCont';
 import { HistorialProvider } from './contexto/Historial.jsx';
 import { EstrellasProvider } from './contexto/EstrellasCont';
+import { FavoritosProvider } from './contexto/FavoritosCont';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CarritoProvider>
       <HistorialProvider>
         <EstrellasProvider>
-          <App />
+          <FavoritosProvider>
+            <App />
+          </FavoritosProvider>
         </EstrellasProvider>
       </HistorialProvider>
     </CarritoProvider>

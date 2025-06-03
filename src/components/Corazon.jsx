@@ -1,10 +1,22 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import FavoritosContext from '../contexto/FavoritosCont';
 
-const Corazon = () => {
-  const [Favorito, setFavorito] = useState(false);
+const Corazon = ({ product }) => {
+  const { esFavorito, toggleFavorito } = useContext(FavoritosContext);
+  const [favorito, setFavorito] = useState(false);
+
+  useEffect(() => {
+    setFavorito(esFavorito(product.id));
+  }, [esFavorito, product.id]);
+
+  const handleClick = () => {
+    toggleFavorito(product);
+    setFavorito(!favorito);
+  };
+
   return (
     <button
-      onClick={() => setFavorito(!Favorito)}
+      onClick={handleClick}
       style={{
         position: 'absolute',
         top: '-30px',
@@ -13,10 +25,10 @@ const Corazon = () => {
         border: 'none',
         fontSize: '48px',
         cursor: 'pointer',
-        color: Favorito ? 'red' : 'gray'
+        color: favorito ? 'red' : 'gray'
       }}
     >
-    ♥
+      ♥
     </button>
   );
 };
