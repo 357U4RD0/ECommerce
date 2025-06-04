@@ -14,6 +14,14 @@ const Carrito = () => {
   const total = useMemo(() => totalCarrito(carrito, cantidades), [carrito, cantidades]);
   const mostrar = total > 999.99 ? 'ERROR' : `$${total.toFixed(2)}`;
 
+  const Pagar = () => {
+    if (mostrar === 'ERROR') {
+      alert('No se pudo realizar la compra');
+    } else {
+      alert('Compra realizada con éxito');
+    }
+  };
+
   return (
     <div className="carrito-container">
       <div className="carrito-header">
@@ -36,7 +44,7 @@ const Carrito = () => {
         <div className="carrito-actions">
           <button className="btn-vaciar" onClick={vaciar}>🗑️ Vaciar</button>
           <button className="volver-btn" onClick={() => navigate('/')}>↶ Volver</button>
-          <button className="btn-pagar">$ Pagar</button>
+          <button className="btn-pagar" onClick={Pagar}>$ Pagar</button>
         </div>
       </div>
     </div>
